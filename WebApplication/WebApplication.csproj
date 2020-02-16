@@ -9,6 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebApplication.Contract\WebApplication.Contract.csproj" />
     <ProjectReference Include="..\WebApplication.Service\WebApplication.Service.csproj" />
   </ItemGroup>
 

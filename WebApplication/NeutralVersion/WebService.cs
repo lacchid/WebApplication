@@ -1,9 +1,9 @@
-﻿using WebApplication.NeutralVersion.Interfaces;
+﻿using WebApplication.Contract.NeutralVersion;
 using WebApplication.Service.Interfaces;
 
 namespace WebApplication.NeutralVersion
 {
-    public class WebService : IWebService
+    public class WebService : IWebServiceContract
     {
         private readonly IConvertService _convertService;
         private readonly ISequencesService _sequencesService;

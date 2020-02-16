@@ -1,8 +1,6 @@
 ﻿using System;
 using System.IO;
-using System.Text.RegularExpressions;
 using System.Xml;
-using System.Xml.Serialization;
 using Newtonsoft.Json;
 using WebApplication.Service.Interfaces;
 using Formatting = Newtonsoft.Json.Formatting;

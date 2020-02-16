@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 using WebApplication.Service.Interfaces;
 
 namespace WebApplication.Service
@@ -7,8 +8,8 @@ namespace WebApplication.Service
     {
         public static void AddServices(this IServiceCollection services)
         {
-            services.AddScoped<ISequencesService, SequencesService>();
-            services.AddScoped<IConvertService, ConvertService>();
+            services.TryAddSingleton<ISequencesService, SequencesService>();
+            services.TryAddSingleton<IConvertService, ConvertService>();
         }
     }
 }
