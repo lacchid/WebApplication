@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WebApplication.Client
 {
     public partial class FormWait : Form
     {
-        public FormWait(Action action = null)
+        public FormWait()
         {
             InitializeComponent();
         }

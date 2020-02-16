@@ -16,36 +16,18 @@ namespace WebApplication.Client
             InitWebService();
         }
 
-        private IWebServiceContract InitWebService()
+        private void InitWebService()
         {
             try
             {
                 _webService = new ServicesClient();
+                return;
             }
             catch (Exception e)
             {
                 MessageBox.Show("Connection Error", Text, MessageBoxButtons.OK);
             }
-            return null;
-        }
-
-        private decimal CallFibonacci(int f)
-        {
-            try
-            {
-                if (_webService == null)
-                {
-                    InitWebService();
-                    if (_webService == null)
-                        return -1;
-                }
-                return _webService.Fibonacci(f);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show("An error has ocurred", Text, MessageBoxButtons.OK);
-            }
-            return -1;
+            _webService = null;
         }
 
         private void buttonFibonacci_Click(object sender, EventArgs e)

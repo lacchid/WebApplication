@@ -93,7 +93,7 @@ namespace WebApplication.Client
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonFibonacci);
             this.Name = "FormMain";
-            this.Text = "Form1";
+            this.Text = "FormMain";
             this.ResumeLayout(false);
 
         }
